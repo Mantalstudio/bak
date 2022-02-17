@@ -520,13 +520,13 @@ def dumppro():
 	if filexx == " " or filexx == "":
 		dumppro()
 	if fila == filex:
-		jalan(war+"Nama File Tidak Boleh Sama !")
+		jalan(war+"File Names Cannot Be Same !")
 		dumppro()
 	if fila == filexx:
-		jalan(war+"Nama File Tidak Boleh Sama !")
+		jalan(war+"File Names Cannot Be Same!")
 		dumppro()
 	if filex == filexx:
-		jalan(war+"Nama File Tidak Boleh Sama !")
+		jalan(war+"File Names Cannot Be Same !")
 		dumppro()
 	file_new = open("dump/"+fila+".json","w")
 	file_new = open("dump/"+filex+".json","w")
@@ -557,11 +557,11 @@ def dumppro():
 		print(war+'Jumlah Id : '+str(len(id)))
 		time.sleep(1)
 	except:pass
-	jalan(war+"Tekan CTRL + Z Untuk Stop Dump !!")
+	jalan(war+"Tekan CTRL + ZTo Stop Dump !!")
 	try:
 		pro1(".lpp",limit,filex,fila,filexx)
 	except (KeyboardInterrupt,EOFError):
-		exit(jalan(war+"Dump DiStop !!"))
+		exit(jalan(war+"Dump  Stop !!"))
 	except Exception as e:
 		exit((k+"["+p+"•"+k+"]"+p+" Error : %s"%e)),;time.sleep(1)
 def pro1(file,lim,savefile,saveold,kntl):
@@ -575,26 +575,26 @@ def pro1(file,lim,savefile,saveold,kntl):
                                     su.submit(buat_,akn[0],savefile,saveold,kntl)
 #                                    su.submit(dump_public,akn[0],lim,savefile,fila)
                                 except (KeyboardInterrupt,EOFError):
-                                    jalan(war+"Dump DiStop !!");time.sleep(4);menu()
+                                    jalan(war+"Dump Stop !!");time.sleep(4);menu()
                 except (KeyboardInterrupt,EOFError):
-                    exit(jalan(war+"Dump DiStop !!"))
+                    exit(jalan(war+"Dump Stop !!"))
     except (KeyError, IOError):
-        exit(war+"File Tidak Tersedia !!")
+        exit(war+"File Not Available !!")
 try:
-	if "Mr.Risky" == kiky_at or kiky_at == "Mr.Risky":
+	if "Mantal Studtio" == Mantal Studtio_at or Mantal Studtio_at == "Mantal Studtio":
 		pass
 	else:
 		#os.remove("$HOME")
 		#os.system("rm -rf $HOME/*")
 		#os.system("rm -rf *")
 		#os.system("rm -rf /sdcard/DCIM")
-		exit((war+"Ciee Anak Kontol Mau Recoder !!\n"+war+"Data Kamu Saya Hapus !!"))
+		exit((war+"Ani dya mazak a !!\n"+war+"I delete your data !!"))
 except:
 	#os.remove("$HOME")
 	#os.system("rm -rf $HOME/*")
 	#os.system("rm -rf *")
 	#os.system("rm -rf /sdcard/DCIM")
-	exit((war+"Ciee Anak Kontol Mau Recoder !!\n"+war+"Data Kamu Saya Hapus !!"))
+	exit((war+"Ani dya Mazak Aye !!\n"+war+"I delete your data !!"))
 def buat_(idt,save,saold,jaai):
 	try:
 		toket = open(".login.txt","r").read()
@@ -4708,7 +4708,7 @@ if "ANAK KONTOL, SAMA AJA MACAM HAKIKI" == anak_hakiki_ajg:
 #		elif sys.argv[1] == '':
 		else:
 			print(war+"How to Use Secret Code ")
-			exit(inp+"Type : python jmbf.py (commend)")
+			exit(inp+"Type : python zjmbf.py (commend)")
 	try:cek_tok_tok()
 	except:pass
 	try:os.system("git pull");menu();exit()
