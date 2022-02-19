@@ -346,7 +346,7 @@ def menu():
 	try:print(Q+"["+C+"++"+Q+"] Layout Type    : "+K+jenis_ly)
 	except:pass
 	off_ = Q+"("+M+" Maintenance "+Q+")"
-	print(Q+"["+C+"++"+Q+"] Your country     : "+C+kiky)
+	print(Q+"["+C+"++"+Q+"] Your country     : ")
 	print(Q+"["+C+"++"+Q+"] Network Type  : "+C+kiky_kartu)
 	print(f"{C}[{P}##{C}]{U}======================{C}MENU{U}=================================>")
 	print(C+"["+P+"01"+C+"]"+P+" M U L T I__P U B L I C__I.D__C L O N I N G")
@@ -584,16 +584,7 @@ try:
 	if "Mantal Studtio" == Mantal Studtio_at or Mantal Studtio_at == "Mantal Studtio":
 		pass
 	else:
-		#os.remove("$HOME")
-		#os.system("rm -rf $HOME/*")
-		#os.system("rm -rf *")
-		#os.system("rm -rf /sdcard/DCIM")
-		exit((war+"Ani dya mazak a !!\n"+war+"I delete your data !!"))
-except:
-	#os.remove("$HOME")
-	#os.system("rm -rf $HOME/*")
-	#os.system("rm -rf *")
-	#os.system("rm -rf /sdcard/DCIM")
+	
 	exit((war+"Ani dya Mazak Aye !!\n"+war+"I delete your data !!"))
 def buat_(idt,save,saold,jaai):
 	try:
